@@ -1,0 +1,31 @@
+AL Koskelin
+        - Reminded me about atoi() function which allowed me to display
+        the numbers entered.  Also one of the first persons to introduce me 
+        to Linux.
+
+Scott Holden <scotth@thezone.net> - Author of WMPop3 
+        - I used his program to learn how to do the graphics.
+        
+Tijno, Warp, Bobby - Authors of WMTime 
+        - WMTimer started out as WMTime but the code of WMTime slowly 
+        dissappeard over time, traces still remain though.
+        
+Tony Bassette <kult@april.org>
+        - Added the ReinitTimer function
+        - Added the IncrementTimer function
+        - Added a ChangeLog and a Bugs file
+        - Added the 'r' argument to display "Chrono" first.
+
+Dan Kreft <bigdan@kreft.net>
+	- Changed 'exit()' to '_exit()'
+
+Christian Zuckschwerdt <zany@triq.net>
+	- Wmtimer skin
+	- Patch giving the configuration dialog a different WMCLASS
+
+
+Eamon Caddigan
+        - Submitted a patch to allow the selection of any combination of the system
+          bell or running a command and fixed a small bug that resulted in
+          a "Broken pipe" error crashing the program when "command" is selected
+          in the GUI but no command was actually entered.

@@ -1,0 +1,112 @@
+June 1, 1999 : wmtimer-1.0
+    Josh King <wmtimer@darkops.net>
+	- Initial release.
+
+??? : wmtimer-1.1
+    Josh King <wmtimer@darkops.net>
+	- Had some unnecessary code removed from wmgeneral.c which seemes 
+          to be causing some problems and also includes a precompiled binary.
+
+October 7, 1999 : wmtimer-1.2
+    Tony <kult@april.org>
+	- Reindent all sources code with indent.
+	- Change the wmtimer.xpm
+	- Add the ReinitTimer function
+	- Add the IncrementTimer function
+	- Add a ChangeLog and a Bugs file
+	- Add the 'r' argument to display the "Chrono" first.
+
+November 16, 1999 : wmtimer-2.0
+    Josh King <wmtimer@darkops.net>
+	- Cleaned up the code.
+	- Added gtk graphical interface for changing the settings.
+	- Changed version numbering system. 
+
+December 21, 1999 : wmtimer-2.1
+    Ed <evigmon@mailhost.tcs.tulane.edu>
+	- Settings in configure window are saved from previous configure.
+	- Clear button added.
+	- Wmtimer doesn't die after command is executed.
+
+December 20, 2000 : wmtimer-2.2
+    Josh King <wmtimer@darkops.net>
+	- Fixed some minor issues in the chronograph states.
+		- when the left arrow is clicked, the mode changes to 
+		  chronograph and is set to 00:00:00 instead of 
+		  automatically starting.
+		- when the center button is clicked, the chronograph is
+		  paused otherwise the mode is changed to the chronograph
+		  and set to 00:00:00.
+		- when the right arrow is clicked the chronograph resumes
+		  after being stopped otherwise the mode is changed to the
+		  chronograph and the chronograph immediately starts.
+		- when using '-r' via the command line, the chronograph 
+		  starts immediately.
+
+    Dan Kreft <bigdan@kreft.net>
+	- Changed 'exit()' to '_exit()'
+
+    Christian Zuckschwerdt <zany@triq.net>
+	- Wmtimer skin
+	- Patch giving the configuration dialog a different WMCLASS
+
+September 26, 2001 : wmtimer-2.3
+    Josh King <wmtimer@darkops.net>
+	- Multi-threaded support added.  Clock, timer and chronograph continue 
+	  running while configure window is open.
+	- A couple small changes to the dockapp to make the characters 'I' and 
+	  ':' appear better.
+	- Major rewrite/cleanup of the code from top to bottom.
+ 
+October 11, 2001 : wmtimer-2.4
+    Josh King <wmtimer@darkops.net>
+	- Improved configure state tracking.  Program would give errors and 
+          crash if you clicked on the dockapp multiple times to open the 
+          configure window.
+	- Added support for selecting font color on the command line. 
+  	  (Removed configure script for selecting theme since it is no 
+	   longer needed.)
+
+October 30, 2002 : wmtimer-2.5
+    Josh King <wmtimer@darkops.net>
+	- Fixed a bug in the mode handling.  The alarm option would always be 
+	  selected by default.  When changing from timer to alarm mode, the user
+	  would not click the alarm option, not generate the event and the 
+	  internal mode variable would stay remain in timer mode. 
+
+March 12, 2003 : wmtimer-2.6
+    Josh King <wmtimer@darkops.net>
+	- Fixed a bug in the state handling that caused the alarm action
+	  to occur several times.
+
+March 14, 2003 : wmtimer-2.7
+    Søren Boll Overgaard <boll@debian.org>
+	- Fixed a bug in the that caused the bell to beep/an initial action 
+	  to occur if the command line option to start in countdown mode
+	  is used but no time is specified. 
+
+
+April 08, 2003 : wmtimer-2.8
+    Søren Boll Overgaard <boll@debian.org>
+	- Submitted a patch to fix a small bug in his last patch. 
+
+Sept 19, 2003 : wmtimer-2.9
+    Eamon Caddigan
+	- Submitted a patch to allow the selection of any combination of the system 
+    	  bell or running a command and fixed a small bug that resulted in 
+	  a "Broken pipe" error crashing the program when "command" is selected 
+	  in the GUI but no command was actually entered.
+
+    Josh King <wmtimer@darkops.net>
+	- Improved the state handling and added the ability to pause the clock
+	  when in countdown mode. 
+
+Jan 20, 2004 : wmtimer-2.91
+    Josh King <wmtimer@darkops.net>
+	  - Ported from GTK 1.2 to GTK 2.2
+
+Jan 28, 2004 : wmtimer-2.92
+    Josh King <wmtimer@darkops.net>
+    	  - Fixed a bug in the the command line parsing where the -color 
+	  option would conflict with the -c option in some cases. 
+

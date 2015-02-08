@@ -1,0 +1,9 @@
+Installation instructions.
+
+This has only been tested and compiled on i386 Linux machines.
+
+Go to wmtimer directory and type:
+ 
+ make
+
+copy the wmtimer binary to a directory in your path.

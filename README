@@ -1,0 +1,52 @@
+WMTimer by Josh King <jking@dwave.net>  
+======================================
+
+WMTimer has only been tested on an Intel machine running redhat 6.2
+
+Standard Disclaimer:
+WMTimer is to be used at your own risk. I will not be held responsible
+for any damages this application may cause your system.
+
+This program is distributed under the GNU Public Liscense which is included. 
+
+
+General Usage Information:
+==========================
+
+WMTimer can be configured either at run time via the command line or by using
+the GTK interface by clicking on the main part of the window 
+(anywhere except the buttons).
+
+- To switch to the Chrono function simply click on the right arrow button to 
+  start the chronograph.
+
+- You can pause the chronogaph by clicking on the center, rectangle button 
+  and resume again by clicking the right arrow button.
+
+- You can reset the timer by clicking on the left arrow button.
+
+- Time entered via the command line must be in the form of x:x:x.  You don't 
+  need to have 2 digits for each number but you must have at least zero's in 
+  as placeholders for hours, minutes and seconds. 
+
+
+Using WMTimer To Execute A Command:
+===================================
+
+Command line:
+
+- If you have multiple words you must put the command in qoutes.
+	eg. wmtimer -c -t 0:0:3 -e "rxvt -e telnet home"
+- If you only have one word, then no quotes are needed.
+	eg. wmtimer -c -t 0:0:3 -e rxvt
+- If you have a long, multiword filename as part of the command you must put 
+  the whole thing in double quotes and the filename in single quotes.  
+	eg. wmtimer -c -t 0:0:3 -e "mpg123 '/mp3/Creed - Higher.mp3'"
+
+
+GUI Interface:
+==============
+
+- The only time you need quotes is when are running a program with an argument 
+  that contains spaces. 
+	eg. mpg123 "/mp3/Creed - Higher.mp3"
